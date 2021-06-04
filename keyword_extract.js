@@ -14,8 +14,8 @@ var extract_keyword = function(text, number = 5) {
     var check_sent = function(word, sentences) {
 
         for (x in sentences) {
-            x = sentences[x]
-            var y = true
+            x = sentences[x];
+            var y = true;
             if (x.includes(word) === false) {
                 y = false;
                 break;
@@ -31,11 +31,11 @@ var extract_keyword = function(text, number = 5) {
         return num;
     }
 
-    var idf_score = {}
+    var idf_score = {};
     var tf_score = {};
 
     for (each_word in total_words) {
-        each_word = total_words[each_word]
+        each_word = total_words[each_word];
         each_word = each_word.replace('.', '');
 
         if (stopwords.includes(each_word) === false) {
