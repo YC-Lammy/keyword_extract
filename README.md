@@ -1,5 +1,8 @@
 # keyword_extract
 
+extract keywords base on total usage and frequency on multiple sentence.
+then calculate the final score by log function.
+
 # Keyword_extract.py
 
 keyword extraction written in python
