@@ -9,28 +9,28 @@ var extract_keyword = function(text, number = 5) {
     }
 
     const total_sent_len = total_sentences.length;
+    var final = [];
 
     var check_sent = function(word, sentences) {
-        var final = [];
+
         for (x in sentences) {
             x = sentences[x]
             var y = true
-            for (w in word) {
-                if (x.includes(w) === false) {
-                    y = false;
-                    break;
-                }
+            if (x.includes(word) === false) {
+                y = false;
+                break;
             }
             final.push(y);
         }
-        var sent_len = [];
+        var num = 0;
         for (i = 0; i < final.length; i++) {
-            if (final[i]) {
-                sent_len.push(sentences[i]);
+            if (final[i] === true) {
+                num += 1;
             }
         }
-        return sent_len.length;
+        return num;
     }
+
     var idf_score = {}
     var tf_score = {};
 
@@ -61,6 +61,7 @@ var extract_keyword = function(text, number = 5) {
         var value = idf_score[key];
         idf_score[key] = Math.log(parseInt(total_sent_len / value));
     }
+
     var tf_idf_score = {};
     for (key in tf_score) {
         if (idf_score[key]) {
