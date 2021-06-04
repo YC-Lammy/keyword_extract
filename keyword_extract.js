@@ -88,5 +88,3 @@ var extract_keyword = function(text, number = 5) {
     console.log(result);
     return result;
 }
-var text = 'hello hello. my name is java, nice to meet you.'
-extract_keyword(text)
