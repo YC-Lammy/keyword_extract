@@ -2,6 +2,5 @@
 
 keyword extraction written in python
 
-```
-  pip install nltk
+```pip install nltk
 ```
