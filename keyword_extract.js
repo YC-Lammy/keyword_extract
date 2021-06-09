@@ -1,3 +1,18 @@
+//        DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE 
+//                    Version 2, December 2004 
+//
+// Copyright (C) 2004 YC <github.com/YC-Lammy> 
+//
+// Everyone is permitted to copy and distribute verbatim or modified 
+// copies of this license document, and changing it is allowed as long 
+// as the name is changed. 
+//
+//            DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE 
+//   TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION 
+//
+//  0. You just DO WHAT THE FUCK YOU WANT TO.
+
+
 var extract_keyword = function(text, number = 5) {
     const stopwords = ['what', 'until', 'a', "haven't", 'will', 'wasn', 'hers', 'after', 'myself', 'below', 'mustn', 'she', 'here', 'if', 'these', 'only', 'above', "wouldn't", "mustn't", "it's", "mightn't", 'to', 'was', 'in', "won't", 'itself', 'can', 'mightn', 'ourselves', 'be', 'which', 'some', 'those', "should've", "you'd", 'again', 've', 'haven', 'not', 'hadn', 'shouldn', 'my', 'has', 'are', 'further', "she's", 'now', "wasn't", 'themselves', 'its', "shan't", 'ain', 'an', "isn't", 'there', 'your', 'doing', 'once', 'that', "you've", 'no', 'were', 'just', 'them', 'her', 'between', 'been', 'into', 'from', 'while', 'on', 'against', 'am', 'out', 'should', 'this', 'then', 'as', 'm', 'being', 'doesn', "hadn't", 'before', 'who', 'with', 'down', 'nor', 'is', 'me', 'or', 'wouldn', 'own', "hasn't", 'did', "weren't", 'his', 'hasn', 'isn', "aren't", 'for', 'during', 'ours', 're', 'o', "needn't", 'up', 'under', 'each', 'have', 'same', 'off', 'where', 'but', 'ma', 'most', 'y', 'such', 'by', 'they', "doesn't", 'few', 'him', "you're", 's', 'very', 'll', 'don', 'than', 'when', 'd', 'through', 'having', 'it', 'weren', 'too', "didn't", 'their', 'you', 'and', 'himself', 'yours', 'other', 'so', 'more', 't', 'all', 'herself', 'the', 'theirs', 'aren', 'whom', 'about', 'won', 'yourselves', 'our', "don't", 'over', 'shan', 'we', 'why', "shouldn't", 'because', 'any', 'how', 'had', 'at', 'he', 'of', 'yourself', 'does', 'both', 'didn', "couldn't", "that'll", 'couldn', "you'll", 'i', 'needn', 'do'];
 
